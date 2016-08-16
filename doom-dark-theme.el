@@ -244,6 +244,16 @@
      ;; Language-specific
      ;;
 
+     ;;Latex
+     `(font-latex-math-face ((,c (:foreground ,yellow))))
+     `(font-latex-sectioning-1-face ((,c (:height 1.7 :inherit font-latex-sectioning-5-face))))
+     `(font-latex-sectioning-2-face ((,c (:height 1.5 :inherit font-latex-sectioning-5-face))))
+     `(font-latex-sectioning-3-face ((,c (:height 1.3 :inherit font-latex-sectioning-5-face))))
+     `(font-latex-sectioning-4-face ((,c (:height 1.1 :inherit font-latex-sectioning-5-face))))
+     `(font-latex-sectioning-5-face ((,c (:foreground ,orange :weight bold))))
+     `(font-latex-sedate-face ((,c (:foreground ,green))))
+
+     
      ;; (css|scss)-mode
      `(css-proprietary-property ((,c (:foreground ,keywords))))
      ;; js2-mode

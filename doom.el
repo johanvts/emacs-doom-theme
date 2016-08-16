@@ -15,7 +15,7 @@
 ;;
 ;;; Code:
 
-(require 'dash)
+(load-library "cl")
 
 (defgroup doom nil
   "Options for doom"
@@ -73,7 +73,7 @@ temporary buffers."
 
 (defun doom-blend (color1 color2 alpha)
   (apply (lambda (r g b) (format "#%02x%02x%02x" (* r 255) (* g 255) (* b 255)))
-         (--zip-with (+ (* alpha it) (* other (- 1 alpha)))
+         (cl-mapcar (lambda (it other) (+ (* alpha it) (* other (- 1 alpha))))
                      (doom-name-to-rgb color1)
                      (doom-name-to-rgb color2))))
 
