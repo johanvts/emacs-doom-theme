@@ -135,7 +135,7 @@
      `(font-lock-regexp-grouping-construct ((,c (:foreground ,operators :bold t))))
      `(show-paren-match                    ((,c (:foreground ,magenta :inverse-video t))))
      ;; Modeline
-     `(mode-line                           ((,c (:foreground ,modeline-fg          :background ,modeline-bg))))
+     `(mode-line                           ((,c (:foreground ,modeline-fg-2        :background ,modeline-bg))))
      `(mode-line-inactive                  ((,c (:foreground ,modeline-fg-inactive :background ,modeline-bg-inactive))))
      `(mode-line-is-modified               ((,c (:foreground ,magenta :background nil :bold t))))
      `(mode-line-buffer-file               ((,c (:foreground ,white :bold t))))
